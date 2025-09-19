@@ -51,7 +51,4 @@ def consultar_nombre(request: RutRequest):
     nombre = obtener_nombre_por_rut(request.rut)
     return {"rut": request.rut, "nombre": nombre}
 
-# --- Ejecutar con variables del .env ---
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host=HOST, port=PORT)
+
